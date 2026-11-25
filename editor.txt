@@ -1,0 +1,1 @@
+so my initial plan is to create a static webpage which will be brought live with the help of github for now.

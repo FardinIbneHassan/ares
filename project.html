@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Project · ARES | Solaris Tech</title>
+  <meta name="description" content="What ARES is, the power problems real Mars rovers faced, and how the ARES energy module solves them.">
+  <meta name="theme-color" content="#0d0e10">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="js/main.js" defer></script>
+  <!-- TODO (analytics): paste your GoatCounter script tag here. See README.md -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on every page; update all files if you change it) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ARES home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">ARES<small>Solaris Tech</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span><span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-index="01">Home</a></li>
+          <li><a href="project.html" data-index="02" aria-current="page">Project</a></li>
+          <li><a href="features.html" data-index="03">Features</a></li>
+          <li><a href="roadmap.html" data-index="04">Roadmap</a></li>
+          <li><a href="gallery.html" data-index="05">Gallery</a></li>
+          <li><a href="team.html" data-index="06">Team</a></li>
+          <li><a href="resources.html" data-index="07">Resources</a></li>
+          <li><a href="contact.html" data-index="08">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Project</span></nav>
+        <h1 class="reveal" style="--d:1">Every watt counts on Mars.</h1>
+        <p class="lead reveal" style="--d:2">ARES is an energy module for Mars rovers. It handles power generation, distribution and management, built around problems that real missions faced.</p>
+        <div class="page-hero-meta reveal" style="--d:3">
+          <span class="tag tag--live"><span class="dot"></span>Stage: Prototyping</span>
+          <span class="tag">Simulation</span>
+          <span class="tag">Hardware</span>
+          <span class="tag">3D design &amp; printing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split split--wide-left">
+        <div class="reveal">
+          <span class="eyebrow">01 / About</span>
+          <h2 id="about-title">A power system that thinks for itself.</h2>
+          <p class="lead">ARES stands for <strong>Autonomous Rover Energy System</strong>. It is the part of a rover that collects energy, stores it and decides where it goes.</p>
+          <p class="muted">Every feature we build answers a question a real mission had to face: what happens when dust covers the panels, when a storm hides the sun, or when the rover is parked at the wrong angle?</p>
+        </div>
+        <div class="card reveal" style="--d:2">
+          <span class="card-index">MISSION FILE</span>
+          <dl class="stack" style="margin:0">
+            <div><dt class="mono muted" style="font-size:.7rem;letter-spacing:.15em">PROJECT</dt><dd style="margin:0">ARES · Autonomous Rover Energy System</dd></div>
+            <div><dt class="mono muted" style="font-size:.7rem;letter-spacing:.15em">TEAM</dt><dd style="margin:0">Solaris Tech · 4 members</dd></div>
+            <div><dt class="mono muted" style="font-size:.7rem;letter-spacing:.15em">FOCUS</dt><dd style="margin:0">Generating, distributing and managing power</dd></div>
+            <div><dt class="mono muted" style="font-size:.7rem;letter-spacing:.15em">STAGE</dt><dd style="margin:0">Prototyping</dd></div>
+            <div><dt class="mono muted" style="font-size:.7rem;letter-spacing:.15em">GOAL</dt><dd style="margin:0">Start a university rover team and compete</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section class="section section--alt" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 / The problem</span>
+          <h2 id="problem-title">What went wrong on real missions.</h2>
+          <p>Solar-powered machines on Mars have been ended by power problems more often than by broken parts.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card case-file reveal" style="--d:0">
+            <div class="case-meta"><span>Mission <b>Spirit rover</b></span><span>Year <b>2009–2010</b></span></div>
+            <h3>Stuck at the wrong angle</h3>
+            <p>Trapped in soft sand, Spirit could not tilt its panels toward the low winter sun. Its power dropped too far to survive the cold, and it fell silent.</p>
+            <p class="mono" style="font-size:.72rem;color:var(--rust-light);margin-top:1rem">→ ARES: Tilt assist</p>
+          </article>
+          <article class="card case-file reveal" style="--d:1">
+            <div class="case-meta"><span>Mission <b>Opportunity rover</b></span><span>Year <b>2018</b></span></div>
+            <h3>Lost in a global dust storm</h3>
+            <p>A dust storm covering the whole planet blocked out the sun for weeks. With its batteries drained, the rover never answered again.</p>
+            <p class="mono" style="font-size:.72rem;color:var(--rust-light);margin-top:1rem">→ ARES: Tiered survival mode</p>
+          </article>
+          <article class="card case-file reveal" style="--d:2">
+            <div class="case-meta"><span>Mission <b>InSight lander</b></span><span>Year <b>2022</b></span></div>
+            <h3>Buried under dust</h3>
+            <p>InSight wasn't a rover, but its lesson applies: dust slowly built up on its panels until there wasn't enough power to keep operating.</p>
+            <p class="mono" style="font-size:.72rem;color:var(--rust-light);margin-top:1rem">→ ARES: Dust mitigation</p>
+          </article>
+          <article class="card case-file reveal" style="--d:3">
+            <div class="case-meta"><span>Mission <b>Zhurong rover</b></span><span>Year <b>2022</b></span></div>
+            <h3>Hibernation without waking</h3>
+            <p>Zhurong went into hibernation for the Martian winter and did not wake up as planned. Dust build-up is the most likely cause.</p>
+            <p class="mono" style="font-size:.72rem;color:var(--rust-light);margin-top:1rem">→ ARES: Survival mode + dust mitigation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section class="section" id="solution" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 / The solution</span>
+          <h2 id="solution-title">Generate. Distribute. Manage.</h2>
+          <p>ARES splits the job into three layers. Each layer has its own subsystems.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card card--glow reveal" style="--d:0" href="features.html#mppt">
+            <span class="card-index">LAYER A</span>
+            <h3>Generate</h3>
+            <p>Pull the most power from every panel: track the maximum power point, keep the surface clean and point it at the sun.</p>
+            <span class="card-link">MPPT · Dust · Tilt <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card--glow reveal" style="--d:1" href="features.html#loads">
+            <span class="card-index">LAYER B</span>
+            <h3>Distribute</h3>
+            <p>Send power where it matters most, based on what each subsystem needs and how important it is right now.</p>
+            <span class="card-link">Load prioritization <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+          <a class="card card--glow reveal" style="--d:2" href="features.html#survival">
+            <span class="card-index">LAYER C</span>
+            <h3>Manage</h3>
+            <p>Watch every rail in real time. When energy runs short, step down through survival tiers and keep the core signal alive.</p>
+            <span class="card-link">Survival · Telemetry <span class="arrow" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section section--alt" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 / How it works</span>
+          <h2 id="how-title">Follow the energy.</h2>
+          <p>From sunlight to subsystems, every step is measured and managed.</p>
+        </div>
+
+        <div class="panel reveal">
+          <div class="panel-head"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span>ARES // power flow</span><span>Schematic</span></div>
+          <div class="panel-body flow-scroll">
+            <div class="flow-diagram">
+              <svg viewBox="0 0 900 340" role="img" aria-labelledby="flow-title flow-desc">
+                <title id="flow-title">ARES power flow diagram</title>
+                <desc id="flow-desc">The solar array, kept clean by dust mitigation and aimed by tilt assist, feeds the MPPT converter. The converter charges the battery and feeds the power manager. The power manager distributes power by priority to communications, computing, mobility and science, and reports to the telemetry dashboard.</desc>
+
+                <!-- wires (drawn in on scroll) -->
+                <path class="wire draw" d="M170 72 H240"/>
+                <path class="wire draw" d="M390 72 H425 V160 H460"/>
+                <path class="wire draw" d="M315 104 V230"/>
+                <path class="wire draw" d="M390 262 H425 V185 H460"/>
+                <path class="wire draw" d="M610 167 H650 V48 H700"/>
+                <path class="wire draw" d="M650 128 H700"/>
+                <path class="wire draw" d="M650 167 V208 H700"/>
+                <path class="wire draw" d="M650 208 V288 H700"/>
+                <path class="wire data draw" d="M95 230 V104"/>
+                <path class="wire data draw" d="M535 199 V260"/>
+
+                <!-- energy pulses -->
+                <path class="pulse" d="M170 72 H240"/>
+                <path class="pulse d2" d="M390 72 H425 V160 H460"/>
+                <path class="pulse d3" d="M315 104 V230"/>
+                <path class="pulse" d="M390 262 H425 V185 H460"/>
+                <path class="pulse d2" d="M610 167 H650 V48 H700"/>
+                <path class="pulse d3" d="M610 167 H650 V128 H700"/>
+                <path class="pulse" d="M610 167 H650 V208 H700"/>
+                <path class="pulse d2" d="M610 167 H650 V288 H700"/>
+                <path class="pulse data" d="M95 230 V104"/>
+                <path class="pulse data d2" d="M535 199 V260"/>
+
+                <!-- nodes -->
+                <g class="node accent"><rect x="20" y="40" width="150" height="64" rx="4"/><text x="36" y="68">Solar array</text><text class="sub" x="36" y="88">+ TILT ASSIST</text></g>
+                <g class="node data"><rect x="20" y="230" width="150" height="64" rx="4"/><text x="36" y="258">Dust clearing</text><text class="sub" x="36" y="278">PIEZO VIBRATION</text></g>
+                <g class="node accent"><rect x="240" y="40" width="150" height="64" rx="4"/><text x="256" y="68">MPPT</text><text class="sub" x="256" y="88">BUCK/BOOST · P&amp;O</text></g>
+                <g class="node"><rect x="240" y="230" width="150" height="64" rx="4"/><text x="256" y="258">Battery</text><text class="sub" x="256" y="278">STORAGE</text></g>
+                <g class="node accent"><rect x="460" y="135" width="150" height="64" rx="4"/><text x="476" y="163">Power manager</text><text class="sub" x="476" y="183">PRIORITY + SURVIVAL</text></g>
+                <g class="node data"><rect x="460" y="260" width="150" height="64" rx="4"/><text x="476" y="288">Telemetry</text><text class="sub" x="476" y="308">LIVE DASHBOARD</text></g>
+                <g class="node"><rect x="700" y="20" width="180" height="56" rx="4"/><text x="716" y="44">Communications</text><text class="sub" x="716" y="62">PRIORITY 1</text></g>
+                <g class="node"><rect x="700" y="100" width="180" height="56" rx="4"/><text x="716" y="124">Core computer</text><text class="sub" x="716" y="142">PRIORITY 1</text></g>
+                <g class="node"><rect x="700" y="180" width="180" height="56" rx="4"/><text x="716" y="204">Mobility</text><text class="sub" x="716" y="222">PRIORITY 3</text></g>
+                <g class="node"><rect x="700" y="260" width="180" height="56" rx="4"/><text x="716" y="284">Science</text><text class="sub" x="716" y="302">PRIORITY 4</text></g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="scroll-hint">← Swipe to see the full diagram →</p>
+
+        <ol class="steps mt-lg">
+          <li class="reveal" style="--d:0"><strong>Capture</strong>Panels tilt toward the sun, and piezo vibration shakes off dust before it builds up.</li>
+          <li class="reveal" style="--d:1"><strong>Convert</strong>The MPPT converter keeps adjusting voltage so the array always runs at its peak power point.</li>
+          <li class="reveal" style="--d:2"><strong>Store</strong>Spare energy charges the battery for night-time and stormy days.</li>
+          <li class="reveal" style="--d:3"><strong>Distribute</strong>The power manager feeds each subsystem in order of priority.</li>
+          <li class="reveal" style="--d:4"><strong>Survive &amp; report</strong>When energy runs low, ARES drops through survival tiers. All the while, it streams live telemetry to mission control.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="cta reveal reveal--scale">
+          <span class="eyebrow">Next</span>
+          <h2>See each subsystem in motion.</h2>
+          <p>Six live animations show how MPPT, dust clearing, survival tiers, load priority, tilt assist and telemetry work.</p>
+          <a class="btn btn--primary" href="features.html">Explore the features <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="ARES home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">ARES<small>Solaris Tech</small></span>
+          </a>
+          <p>Autonomous Rover Energy System: an energy module for Mars rovers, built by Team Solaris Tech.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <ul>
+            <li><a href="team.html">Meet the team</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <!-- TODO: replace with real links, e.g. <li><a href="https://github.com/..." target="_blank" rel="noopener">GitHub</a></li> -->
+            <li><span class="muted">GitHub · coming soon</span></li>
+            <li><span class="muted">Social media · coming soon</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Solaris Tech · ARES</span>
+        <span>Built for Mars. Hosted on Earth.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

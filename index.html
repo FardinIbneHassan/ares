@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARES · Autonomous Rover Energy System | Solaris Tech</title>
+  <meta name="description" content="ARES is an energy module for Mars rovers that handles power generation, distribution and management. Built by Team Solaris Tech.">
+  <meta name="theme-color" content="#0d0e10">
+  <meta property="og:title" content="ARES · Autonomous Rover Energy System">
+  <meta property="og:description" content="An energy module for Mars rovers, built to solve the power problems real missions faced.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/hero-canvas.js" defer></script>
+  <!-- TODO (analytics): paste your GoatCounter script tag here. See README.md -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on every page; update all files if you change it) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ARES home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">ARES<small>Solaris Tech</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span><span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-index="01" aria-current="page">Home</a></li>
+          <li><a href="project.html" data-index="02">Project</a></li>
+          <li><a href="features.html" data-index="03">Features</a></li>
+          <li><a href="roadmap.html" data-index="04">Roadmap</a></li>
+          <li><a href="gallery.html" data-index="05">Gallery</a></li>
+          <li><a href="team.html" data-index="06">Team</a></li>
+          <li><a href="resources.html" data-index="07">Resources</a></li>
+          <li><a href="contact.html" data-index="08">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div>
+          <span class="tag tag--live"><span class="dot"></span>Prototype in progress</span>
+          <h1 class="hero-title" id="hero-title" data-split>ARES</h1>
+          <p class="hero-sub reveal" style="--d:4">Autonomous Rover Energy System</p>
+          <p class="hero-text reveal" style="--d:5">An energy module for Mars rovers. It gets the most out of every ray of sunlight, keeps its panels clean, and keeps the rover alive when the sun goes away.</p>
+          <div class="btn-row reveal" style="--d:6">
+            <a class="btn btn--primary" href="project.html">Explore the system <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="features.html">See the features</a>
+          </div>
+        </div>
+
+        <aside class="hud reveal reveal--scale" style="--d:7" aria-label="Simulated telemetry preview">
+          <div class="hud-head"><span>ARES // SIM FEED</span><span class="tag tag--live"><span class="dot"></span>Live</span></div>
+          <dl style="margin:0">
+            <div class="hud-row"><dt>SOLAR IN</dt><dd data-telemetry data-base="86.4" data-jitter="2.4" data-unit=" W">86.4 W</dd></div>
+            <div class="hud-row"><dt>MPPT EFF</dt><dd data-telemetry data-base="97.6" data-jitter="1.1" data-unit="%" data-bar="bar-eff">97.6%</dd></div>
+            <div class="hud-bar"><span id="bar-eff" style="--v:97%"></span></div>
+            <div class="hud-row"><dt>BATTERY SOC</dt><dd data-telemetry data-base="76" data-jitter="0.6" data-unit="%" data-bar="bar-soc">76.0%</dd></div>
+            <div class="hud-bar"><span id="bar-soc" style="--v:76%"></span></div>
+            <div class="hud-row"><dt>DUST COVER</dt><dd data-telemetry data-base="3.2" data-jitter="0.4" data-unit="%">3.2%</dd></div>
+            <div class="hud-row"><dt>MODE</dt><dd>T0 · NOMINAL</dd></div>
+            <div class="hud-row"><dt>CLOCK</dt><dd data-clock>--:--:-- UTC</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ===== MARS IN NUMBERS ===== -->
+    <section class="section--tight" aria-label="Mars in numbers">
+      <div class="container">
+        <div class="stats">
+          <div class="stat reveal" style="--d:0">
+            <span class="stat-value"><span data-count="43">43</span><span class="unit">%</span></span>
+            <span class="stat-label">of the sunlight Earth gets reaches Mars</span>
+          </div>
+          <div class="stat reveal" style="--d:1">
+            <span class="stat-value"><span data-count="14">14</span><span class="unit">yrs+</span></span>
+            <span class="stat-label">Opportunity's run on a 90-sol plan, until a dust storm cut its power</span>
+          </div>
+          <div class="stat reveal" style="--d:2">
+            <span class="stat-value" data-decode="24h 39m">24h 39m</span>
+            <span class="stat-label">in one Martian day (a "sol"), much of it in darkness</span>
+          </div>
+          <div class="stat reveal" style="--d:3">
+            <span class="stat-value"><span data-count="6">6</span><span class="unit">systems</span></span>
+            <span class="stat-label">working together inside ARES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE PROBLEM ===== -->
+    <section class="section" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 / The problem</span>
+          <h2 id="problem-title">On Mars, power decides how long a mission lasts.</h2>
+          <p>Solar rovers rarely break down. More often they slowly run out of energy. ARES targets the power problems that actual missions ran into.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card card--glow reveal" style="--d:0">
+            <span class="card-index">CASE 01 · DUST</span>
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></svg></div>
+            <h3>Dust steals sunlight</h3>
+            <p>Fine dust settles on solar panels and output drops sol after sol. Spirit and Opportunity had to wait for lucky gusts of wind to clean them.</p>
+          </article>
+          <article class="card card--glow reveal" style="--d:1">
+            <span class="card-index">CASE 02 · STORMS</span>
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="17" height="10" rx="1.5"/><path d="M22 11v2M6 10v4"/></svg></div>
+            <h3>Storms switch off the sun</h3>
+            <p>In 2018 a dust storm that covered the whole planet blocked out the sun. Opportunity ran out of power and never woke up again.</p>
+          </article>
+          <article class="card card--glow reveal" style="--d:2">
+            <span class="card-index">CASE 03 · ANGLE</span>
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="17" cy="6" r="2.5"/><path d="M3 18l12-5M9 15.5V21M6 21h6"/></svg></div>
+            <h3>Bad angles waste power</h3>
+            <p>Spirit got stuck in soft sand in 2009 and could not tilt its panels toward the winter sun. It went silent in 2010.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE SOLUTION: 6 FEATURES ===== -->
+    <section class="section section--alt" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 / The ARES answer</span>
+          <h2 id="solution-title">Six systems, one goal: keep the rover powered.</h2>
+          <p>Generate more, waste less, and survive the worst.</p>
+        </div>
+        <div class="feature-strip reveal">
+          <a href="features.html#mppt">
+            <span class="num">F/01</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 20h18M4 18c3-9 6-13 9-13s4 3 6 6"/><circle cx="13" cy="5" r="1.5"/></svg>
+            <h3>MPPT power tracking</h3>
+          </a>
+          <a href="features.html#dust">
+            <span class="num">F/02</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></svg>
+            <h3>Dust mitigation</h3>
+          </a>
+          <a href="features.html#survival">
+            <span class="num">F/03</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="2" y="7" width="17" height="10" rx="1.5"/><path d="M22 11v2M6 10v4"/></svg>
+            <h3>Tiered survival mode</h3>
+          </a>
+          <a href="features.html#loads">
+            <span class="num">F/04</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v10M12 11l-6 6M12 11l6 6"/></svg>
+            <h3>Dynamic load priority</h3>
+          </a>
+          <a href="features.html#tilt">
+            <span class="num">F/05</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="17" cy="6" r="2.5"/><path d="M3 18l12-5M9 15.5V21M6 21h6"/></svg>
+            <h3>Tilt assist</h3>
+          </a>
+          <a href="features.html#telemetry">
+            <span class="num">F/06</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="1.5"/><path d="M5 12h3l2-4 3 7 2-3h4M8 21h8"/></svg>
+            <h3>Telemetry dashboard</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MISSION STORY ===== -->
+    <section class="section" aria-labelledby="story-title">
+      <div class="container split">
+        <div class="reveal reveal--left">
+          <span class="eyebrow">03 / Why we started</span>
+          <h2 id="story-title" class="sr-only">Why we started</h2>
+          <blockquote class="quote">
+            Dhaka University has never had a rover team or entered a rover challenge. ARES is how we change that.
+            <footer>Team Solaris Tech</footer>
+          </blockquote>
+        </div>
+        <div class="stack reveal" style="--d:2">
+          <div class="stripes" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="lead">Every rover needs power before it can do anything else. So we started there, with the energy system.</p>
+          <p class="muted">ARES is our first step toward a full university rover team, built to compete in national and international rover challenges.</p>
+          <a class="btn" href="roadmap.html">View the roadmap <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal reveal--scale">
+          <span class="eyebrow">Get involved</span>
+          <h2 id="cta-title">Follow the mission, or help us build it.</h2>
+          <p>We're looking for sponsors, mentors and curious minds. Say hello, or dig into the documents as we publish them.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="contact.html">Contact the team <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="resources.html">Resources &amp; FAQ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="ARES home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">ARES<small>Solaris Tech</small></span>
+          </a>
+          <p>Autonomous Rover Energy System: an energy module for Mars rovers, built by Team Solaris Tech.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <ul>
+            <li><a href="team.html">Meet the team</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <!-- TODO: replace with real links, e.g. <li><a href="https://github.com/..." target="_blank" rel="noopener">GitHub</a></li> -->
+            <li><span class="muted">GitHub · coming soon</span></li>
+            <li><span class="muted">Social media · coming soon</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Solaris Tech · ARES</span>
+        <span>Built for Mars. Hosted on Earth.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap · ARES | Solaris Tech</title>
+  <meta name="description" content="The ARES journey: from first idea to prototype, testing, and national and international rover competitions.">
+  <meta name="theme-color" content="#0d0e10">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="js/main.js" defer></script>
+  <!-- TODO (analytics): paste your GoatCounter script tag here. See README.md -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER (same on every page; update all files if you change it) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ARES home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">ARES<small>Solaris Tech</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span><span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-index="01">Home</a></li>
+          <li><a href="project.html" data-index="02">Project</a></li>
+          <li><a href="features.html" data-index="03">Features</a></li>
+          <li><a href="roadmap.html" data-index="04" aria-current="page">Roadmap</a></li>
+          <li><a href="gallery.html" data-index="05">Gallery</a></li>
+          <li><a href="team.html" data-index="06">Team</a></li>
+          <li><a href="resources.html" data-index="07">Resources</a></li>
+          <li><a href="contact.html" data-index="08">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Roadmap</span></nav>
+        <h1 class="reveal" style="--d:1">From a question to a rover team.</h1>
+        <p class="lead reveal" style="--d:2">The roadmap from our first idea to national and international rover challenges. We'll update it as each phase is finished.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Status classes: (none) = done · is-current = happening now · is-future = planned -->
+        <ol class="timeline" aria-label="Project timeline">
+
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 01 <span class="tag">Done</span></div>
+            <h3>The spark</h3>
+            <p>We noticed that Dhaka University had no rover team and had never entered a rover challenge, so we set out to change that. We started with the system every rover depends on: power.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 02 <span class="tag">Done</span></div>
+            <h3>Learning from real missions</h3>
+            <p>We studied how power problems hurt Spirit, Opportunity, InSight and Zhurong. From what we learned, we defined the six ARES subsystems.</p>
+            <div class="tag-list"><span class="tag">Research</span><span class="tag">Requirements</span></div>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 03 <span class="tag tag--live">Ongoing</span></div>
+            <h3>Simulation &amp; 3D design</h3>
+            <p>Software simulations of MPPT, load priority and survival logic, alongside 3D-designed parts for the panel mount and tilt mechanism.</p>
+            <div class="tag-list"><span class="tag">Simulation</span><span class="tag">CAD</span><span class="tag">3D printing</span></div>
+          </li>
+
+          <li class="timeline-item is-current">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 04 <span class="tag tag--live"><span class="dot"></span>Now</span></div>
+            <h3>Hardware prototype</h3>
+            <p>Building the physical energy module: the MPPT converter, piezo dust clearing, tilt assist and the power manager.</p>
+            <div class="tag-list"><span class="tag">Electronics</span><span class="tag">Firmware</span></div>
+          </li>
+
+          <li class="timeline-item is-future">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 05 <span class="tag tag--soon">Next</span></div>
+            <h3>Testing &amp; results</h3>
+            <p>Measure tracking efficiency, dust clearing and survival behaviour, then publish the results and the live telemetry dashboard here.</p>
+          </li>
+
+          <li class="timeline-item is-future">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-phase">Phase 06 <span class="tag tag--soon">Goal</span></div>
+            <h3>Rover team &amp; competitions</h3>
+            <p>Grow Solaris Tech into a full university rover team and enter national and international rover challenges, with ARES as its power system.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="cta reveal reveal--scale">
+          <span class="eyebrow">Help us get there</span>
+          <h2>Want to be part of the next phase?</h2>
+          <p>Sponsors, mentors and future team members: we'd love to hear from you.</p>
+          <a class="btn btn--primary" href="contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="ARES home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">ARES<small>Solaris Tech</small></span>
+          </a>
+          <p>Autonomous Rover Energy System: an energy module for Mars rovers, built by Team Solaris Tech.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <ul>
+            <li><a href="team.html">Meet the team</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resources.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <!-- TODO: replace with real links, e.g. <li><a href="https://github.com/..." target="_blank" rel="noopener">GitHub</a></li> -->
+            <li><span class="muted">GitHub · coming soon</span></li>
+            <li><span class="muted">Social media · coming soon</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Solaris Tech · ARES</span>
+        <span>Built for Mars. Hosted on Earth.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

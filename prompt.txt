@@ -1,0 +1,173 @@
+#Questions:
+
+Hi! To build the best possible website for your competition project, I need to understand your project and your vision. Please answer as many questions as you can. Short answers are fine, and if something doesn't apply, just write "skip" or "not sure".
+
+SECTION 1: ABOUT THE PROJECT
+1. What is the name of your project?
+2. In 2-3 sentences, what is the project about?
+3. What problem does it solve, or what need does it address?
+4. Who is it meant for (the target users or beneficiaries)?
+5. What makes your project different or unique compared to similar ones?
+6. What is the current stage: idea, prototype, working product, or completed?
+7. What technologies, tools, or methods did you use?
+8. What are the main features or key outcomes of the project?
+9. Do you have results, data, test numbers, or achievements to show?
+10. Is there a story behind the project (how the idea started, challenges you faced)?
+
+SECTION 2: THE COMPETITION
+11. What is the name of the competition, and who organizes it?
+12. What is the submission deadline, and when does the website need to be ready?
+13. Do the competition rules say anything about the website (required content, format, links, word limits)?
+14. Will judges visit the website, or is it mainly a supporting resource?
+15. Is there a presentation, poster, or report that the website should match in style?
+16. Is there a competition or university logo that must appear on the site?
+
+SECTION 3: THE TEAM
+17. Are you working alone or in a team? How many members?
+18. Names, roles, and short bios of each member?
+19. Do you want photos of team members on the site?
+20. Is there a supervisor or mentor to be credited?
+21. Which department, university, or club should be mentioned?
+22. Should the site include contact details or social links for the team?
+
+SECTION 4: PURPOSE AND AUDIENCE OF THE WEBSITE
+23. What is the main goal of the website: impress the judges, explain the project, showcase a demo, or get users?
+24. Who will visit it: judges, classmates, the public, investors, or sponsors?
+25. What should a visitor remember or do after visiting (watch a demo, contact you, download something)?
+26. Should it be a simple one-page site or a multi-page site?
+27. Do you need it in English only, or Bangla as well?
+
+SECTION 5: CONTENT AND PAGES
+28. Which sections do you want? (for example: Home, About, Problem, Solution, Features, How It Works, Demo, Gallery, Team, Results, Contact)
+29. Is there anything else you want that's not in the list above?
+30. Do you have a tagline or slogan for the project?
+31. Do you already have written text for each section, or should I write a draft for you to approve?
+32. Do you want a demo video, a live demo, or a working prototype embedded?
+33. Do you want downloadable files (report PDF, poster, presentation slides)?
+34. Do you want a timeline or roadmap of the project's development?
+35. Do you want an FAQ section?
+36. Do you want a feedback or contact form? Where should messages go (email)?
+37. Any links to include (GitHub, YouTube, Google Drive, social media)?
+
+SECTION 6: IMAGES, LOGO AND MEDIA
+38. Do you have a project logo? If not, do you want one made, or just a text title?
+39. Do you have photos of the prototype, screenshots, diagrams, or charts?
+40. Do you have photos of the team or of the work in progress?
+41. Should I use illustrations, icons, or animations to explain the idea?
+42. Do you have any videos? If yes, are they on YouTube or just files?
+43. Are you okay with me using free stock images where needed, or do you want only your own?
+
+SECTION 7: LOOK AND FEEL
+44. How should the site feel: modern, minimal, techy, futuristic, professional, playful, or academic?
+45. Do you have preferred colors? Any colors to avoid?
+46. Do you want a dark theme, a light theme, or both with a switch?
+47. Do you have any websites you love the look of? Please share 2-3 links.
+48. Any websites whose style you definitely dislike?
+49. Any font preferences (clean, bold, elegant, techy)?
+50. Do you want animations and smooth effects, or a fast, clean, simple site?
+51. Should it look good on phones? (Most visitors use phones, so I plan to make it mobile-friendly.)
+
+SECTION 8: EXTRA FEATURES
+52. Do you want a visitor counter, a feedback or rating option, or a comments section?
+53. Do you want a language switch (English/Bangla)?
+54. Do you want a section for sponsors or partners?
+55. Do you want a news or updates section for competition progress?
+56. Do you want social share buttons?
+57. Any interactive elements, such as a 3D model, a simulation, a quiz, or a calculator related to the project?
+
+SECTION 9: PUBLISHING AND TECHNICAL
+58. Do you already have a domain name in mind (for example projectname.com), or is a free link fine?
+59. Do you have a budget for a domain or hosting, or should it be completely free?
+60. How long should the site stay online: only during the competition or long term?
+61. Do you want to be able to edit the text yourself later, or will I handle all updates?
+62. Do you want website visit analytics (to see how many people visited)?
+63. Is there any private or sensitive information (unpublished research, patents, personal data) that must NOT be public?
+64. Do you need the site to be protected with a password until the competition?
+
+SECTION 10: WRAP-UP
+65. When can you send me all the text, images, and files? (Please give me a date.)
+66. Who will review and approve the final version?
+67. Is there anything else about your vision that I haven't asked about?
+68. What is the one thing you want the website to get absolutely right?
+
+# Answers:
+1.ARES-Autonomous Rover Energy System
+2.Energy module for a mars rover that addresses power generation, distribution and management.
+3.It addresses the energy and power related problems that actual mission sent mars rovers faced.
+4.Making this project with eventual goal of forming a university rover team and enter national and international rover competitions.
+5.Comprises strictly on topics solving real problems already faced by mission sent rovers.
+6.Prototyping
+7.Software simulations, hardware implications, 3D design and printing.
+8.Electronic MPPT(Maximum Power Point Tracking) System DC-DC converter (buck/boost) continuously adjusting the array's operating voltage/current via an algorithm like Perturb & Observe or Incremental Conductance, so the system always sits at the peak of the current I-V curve regardless of panel orientation.
+Dust Mitigation
+Piezoelectric Vibration (Primary, Cheap) using crystal quartz’s intrinsic characteristics or sound/buzzer vibration to potentially shake off the dust particles and/or entrainment/sand trickle clearing.
+Survival Mode
+At low power and low gain, the system enters a Tiered Survival Mode and systematically cuts power to nonessential sub-systems while keeping the core signal alive. Staged Tiers: Nominal⟶Reduced Operations⟶Minimal Operations⟶Deep Hibernation.
+Dynamic Load Prioritization
+Processing and Delivery of power to other systems based on their requirement and composition of the components.
+Tilt Assist
+Independent leveling of solar panels coupled with mobility to tilt the panels and find the best sun angle.
+Mission Control Telemetry Dashboard
+Live I-V and P-V characteristics curves, real-time power efficiency percentages, battery stage of charge, active power rails updating at 60Hz. When light drops and/or dust accumulates on the panels, the software will calculate power degradation in real-time.
+9.Not yet
+10.The university of Dhaka having no rover building team and having no participations in related national and international competitions motivated me to change the fact.
+11.We do not have any particular competitions in mind at this moment. Target competitions are various rover challenges, both national and international.
+12.Not applicable
+13.Not applicable
+14.Mainly a supporting resource
+15.No
+16.No
+17.Working in a team comprised of 4 members
+18.To be added later
+19.To be added later
+20.No
+21.Not applicable
+22.Yes
+23.Explain the project and to get exposure
+24.Classmates, public and sponsors
+25.Know about the project and contact us
+26.Multi page
+27.English only
+28.All of the mentioned sections
+29.Not at this moment
+30.No
+31.You draft, I will approve
+32.Not yet
+33.Sure
+34.Sure
+35.Yes
+36.No
+37.Github and social media
+38.Text title for now
+39.I do
+40.No
+41.Sure
+42.No
+43.No need
+44.Modern
+45.Maintain a mute color palette 
+46.Dark theme
+47.Links: https://marsrover.uiu.ac.bd/, https://dribbble.com/shots/25961667-Retro-Futuristic-Website-Concept-for-a-Cassette-Player, https://webflow.com/made-in-webflow/website/nova-mars-exploration
+48.Websites that include line after line of texts
+49.Clean and Techy
+50.Some animations and effects are preffered
+51.Yes, user experience should be great nonetheless the method of visitation
+52.No
+53.No, only English
+54.To be added later
+55.No
+56.To be added later
+57.No
+58.Will prefer to have Solaris and Tech withing the link, ask before implementing
+59.Free hosting
+60.Long term
+61.Both
+62.Sure
+63.No
+64.No
+65.Whenever I am able
+66.I will
+67.Maybe, unsure
+68.Modern and futuristic animations, effects and transitions.
+
+Thank you! The more detail you give me, the better the website will turn out.
